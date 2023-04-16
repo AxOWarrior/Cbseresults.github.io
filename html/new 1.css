@@ -1,0 +1,71 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+}
+
+body {
+	background: White;
+}
+
+.login-box {
+	width: 280px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: Black;
+}
+
+.login-box h2 {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.login-box .user-box {
+	position: relative;
+}
+
+.login-box .user-box input {
+	width: 100%;
+	padding: 10px 0;
+	font-size: 16px;
+	color: Black;
+	margin-bottom: 30px;
+	border: none;
+	border-bottom: 1px solid Black;
+	outline: none;
+	background: transparent;
+}
+
+.login-box .user-box label {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 10px 0;
+	font-size: 16px;
+	color: Black;
+	pointer-events: none;
+	transition: .5s;
+}
+
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+	top: -20px;
+	left: 0;
+	color: #03a9f4;
+	font-size: 12px;
+}
+
+.login-box .btn {
+	background: transparent;
+	border: 1px solid black;
+	outline: none;
+	color: grey;
+	background: White;
+	padding: 10px 20px;
+	cursor: pointer;
+	border-radius: 5px;
+	margin-bottom: 40px;
+}
